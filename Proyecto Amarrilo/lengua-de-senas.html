@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos de Lengua de Señas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title" onclick="changeTitle()">Bienvenidos a la Página del Hospital de Suba</h1>
+        <div class="header-buttons">
+            <button class="video-call" onclick="startVideoCall()">📹 Videollamada</button>
+            <button class="sign-language">🤟 Intérprete de Lengua de Señas</button>
+            <!-- Botón de redirección a la página principal -->
+            <button class="home-button" onclick="window.location.href='index.html'">🏠 Página Principal</button>
+        </div>
+    </header>
+    
+    
+
+    <section class="video-section">
+        <h2>Aprende Lengua de Señas</h2>
+        <div class="video-grid">
+            <!-- Video 1 -->
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/example_video_1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Video 1: Introducción a la Lengua de Señas</p>
+            </div>
+    
+            <!-- Video 2 -->
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/example_video_2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Video 2: Señales Básicas</p>
+            </div>
+    
+            <!-- Video 3 -->
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/example_video_3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Video 3: Comunicación en Lengua de Señas</p>
+            </div>
+    
+            <!-- Video 4 -->
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/example_video_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Video 4: Aprendizaje Interactivo</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

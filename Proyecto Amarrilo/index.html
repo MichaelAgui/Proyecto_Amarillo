@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Accesible - Hospital de Suba</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagenes/4700e0cf-3410-4232-a77e-bae047c36b6a.webp">
+</head>
+<body>
+    <header>
+        <h1 class="title" onclick="changeTitle()">Interacción inclusiva</h1>
+        <div class="header-buttons">
+            <button class="video-call" onclick="startVideoCall()">📹 Videollamada</button>
+            <button class="sign-language" onclick="redirectToSignLanguage()">🤟 Intérprete de Lengua de Señas</button>
+
+        </div>
+    </header>
+
+    <!-- Carrusel arriba -->
+    <section class="carousel-container">
+        <div class="carousel">
+            <img src="Imagenes/pngtree-international-day-of-the-deaf-for-deaf-persons-with-disabilities-png-image_6144386.png" alt="Asistencia robótica">
+            <img src="Imagenes/pngtree-sign-language-communication-for-the-deaf-and-the-disabled-png-image_6144939.png" alt="Comunicación inclusiva">
+            <img src="Imagenes/pngtree-international-day-of-the-deaf-for-persons-with-disabilities-png-image_6145614.png" alt="Herramientas tecnológicas">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <!-- Más círculos con más información -->
+    <section class="info-section">
+        <div class="info-circle">
+            <h3>Asistencia robótica en el Hospital de Suba</h3>
+            <p>El Hospital de Suba implementa robots para apoyar a los pacientes en tareas de movilidad y asistencia, facilitando la atención a personas con discapacidad.</p>
+        </div>
+        <div class="info-circle">
+            <h3>Comunicación inclusiva en el Hospital de Suba</h3>
+            <p>En el hospital se implementan tecnologías que permiten a las personas con discapacidades auditivas y del habla comunicarse eficazmente con el personal médico.</p>
+        </div>
+        <div class="info-circle">
+            <h3>Herramientas tecnológicas para la atención</h3>
+            <p>El hospital cuenta con dispositivos como tabletas y aplicaciones que facilitan la interacción de los pacientes con el personal de salud, especialmente aquellos con discapacidad.</p>
+        </div>
+
+        <!-- Nuevas secciones de información -->
+        <div class="info-circle">
+            <h3>Accesibilidad Web del Hospital</h3>
+            <p>El sitio web del hospital está optimizado para personas con discapacidades visuales y motoras, con funciones de lectura en voz alta y navegación con teclado.</p>
+        </div>
+        <div class="info-circle">
+            <h3>Educación Inclusiva en el Hospital</h3>
+            <p>El hospital ofrece programas educativos para pacientes con discapacidades, utilizando recursos audiovisuales y herramientas de accesibilidad para su aprendizaje.</p>
+        </div>
+        <div class="info-circle">
+            <h3>Asistencia Virtual para pacientes</h3>
+            <p>El Hospital de Suba implementa asistentes virtuales que responden preguntas de pacientes sobre citas, horarios y servicios a través de comandos de voz.</p>
+        </div>
+    </section>
+
+    <!-- Estadísticas sobre discapacidad -->
+    <section class="statistics">
+        <h2>Estadísticas de Accesibilidad en el Hospital de Suba</h2>
+    
+        <!-- Estadísticas con tarjetas llamativas -->
+        <div class="stat-container">
+            <div class="stat-card">
+                <h3>Accesibilidad en Móviles</h3>
+                <p>El 85% de los pacientes pueden acceder a los servicios mediante aplicaciones móviles adaptadas.</p>
+            </div>
+    
+            <div class="stat-card">
+                <h3>Servicios de Lengua de Señas</h3>
+                <p>El 70% de los pacientes con discapacidades auditivas usan el servicio de lengua de señas en consultas.</p>
+            </div>
+    
+            <div class="stat-card">
+                <h3>Tecnología Adaptada</h3>
+                <p>El 60% de las áreas del hospital cuentan con tecnología adaptada para personas con discapacidad.</p>
+            </div>
+    
+            <div class="stat-card">
+                <h3>Equipos Médicos Especializados</h3>
+                <p>El hospital cuenta con un 90% de equipos médicos adaptados para personas con movilidad reducida.</p>
+            </div>
+        </div>
+    </section>
+    
+
+        <!-- Redes sociales -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+            <a href="https://wa.me" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

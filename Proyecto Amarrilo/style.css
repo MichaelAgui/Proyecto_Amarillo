@@ -1,0 +1,398 @@
+/* Encabezado */
+header {
+    background-color: rgba(0, 0, 50, 0.8);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 120, 255, 0.5); /* Añadido polor */
+    position: relative;
+    z-index: 1;
+}
+
+/* Botones de encabezado */
+.header-buttons button {
+    background-color: #00d4ff;
+    color: #0a192f;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-buttons button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    background: #0a192f; /* Azul oscuro tecnológico */
+    background-image: url('https://www.transparenttextures.com/patterns/circuit-board.png');
+}
+
+/* Fondo animado */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 50, 0.8), rgba(0, 120, 255, 0.5));
+    opacity: 0.5;
+    z-index: -1;
+    animation: moveBackground 10s infinite linear alternate;
+}
+
+/* Animación de fondo */
+@keyframes moveBackground {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+/* Título con interactividad */
+.title {
+    cursor: pointer;
+    font-size: 36px;
+    font-weight: bold;
+    color: #00d4ff;
+    transition: all 0.3s ease-in-out;
+}
+
+.title:hover {
+    color: #ff6600;
+    transform: scale(1.1);
+}
+
+/* Estadísticas */
+.statistics {
+    background-color: #003c60;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.stat {
+    background-color: #00d4ff;
+    color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+.stat:hover {
+    transform: scale(1.05);
+}
+/* Sección de Estadísticas */
+/* Sección de Estadísticas */
+.statistics {
+    background-color: rgba(0, 50, 100, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+    margin-top: 50px;
+    text-align: center; /* Centrar el texto */
+}
+
+/* Título de estadísticas */
+.statistics h2 {
+    color: #00d4ff;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de las tarjetas centrado */
+.stat-container {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: center;     /* Centra las tarjetas verticalmente */
+    flex-wrap: wrap;         /* Asegura que las tarjetas se acomoden bien en pantallas pequeñas */
+    gap: 20px;               /* Espacio entre las tarjetas */
+}
+
+/* Estilo para cada tarjeta de estadística */
+.stat-card {
+    background-color: #00d4ff;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.8);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    width: 250px;            /* Ancho fijo para las tarjetas */
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.9);
+}
+
+.stat-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.stat-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.9);
+}
+
+.stat-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.stat-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Sección de logotipos de accesibilidad */
+.accessibility-logos {
+    background-color: #0a192f;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logos img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+}
+
+/* Carrusel */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 50, 0.7);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 150, 255, 0.9);
+}
+
+/* Sección de información en círculos */
+/* Sección de información en círculos */
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px auto;
+    max-width: 80%;  /* Ajustar el ancho de la sección */
+}
+
+.info-circle {
+    width: 220px;
+    height: 220px;
+    background: rgba(0, 150, 255, 0.6);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.8);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    flex: 1 1 30%; /* Asegura que cada círculo ocupe el 30% del ancho */
+    max-width: 300px;  /* Asegura que no se estire demasiado en pantallas grandes */
+}
+
+.info-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.9);
+}
+
+
+/* Sección de redes sociales y accesibilidad */
+.accessibility-logos {
+    background-color: #0a192f;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logos img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+}
+
+/* Círculos animados de Lengua de Señas */
+.sign-language-circles {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.sign-circle {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 150, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sign-circle img {
+    width: 60%;
+    height: auto;
+}
+
+.sign-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+/* Estilo para los íconos de las redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.social-icons a img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para la sección de los videos */
+.video-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #0a192f; /* Asegúrate de que sea el mismo color de fondo que la página */
+    margin-top: 20px;
+}
+
+/* Contenedor de la cuadrícula de videos */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* 2 o más columnas dependiendo del tamaño */
+    gap: 20px; /* Espacio entre los videos */
+    justify-items: center; /* Centra los videos dentro de la cuadrícula */
+    margin: 0 auto; /* Centra la cuadrícula en el contenedor */
+    max-width: 1200px; /* Limita el ancho máximo para que no se estire demasiado en pantallas grandes */
+}
+
+/* Estilo para cada tarjeta de video */
+.video-card {
+    background-color: #ffffff; /* Color blanco o el que prefieras para las tarjetas */
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 320px; /* Evita que las tarjetas sean demasiado anchas */
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta */
+.video-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo del iframe para que los videos tengan un tamaño adecuado */
+.video-card iframe {
+    width: 100%;
+    height: 200px; /* Ajusta la altura si es necesario */
+    border-radius: 8px;
+}
+
+/* Título debajo de cada video */
+.video-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo para el botón de la página principal */
+.home-button {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.home-button:hover {
+    background-color: #45a049; /* Color al pasar el mouse */
+    transform: scale(1.1); /* Aumento de tamaño suave */
+}
